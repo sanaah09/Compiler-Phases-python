@@ -1,0 +1,39 @@
+# Phase 5: Code Optimization
+
+This phase implements Code Optimization, which is the fifth phase of a compiler.
+
+Code optimization improves the intermediate code generated in the previous phase
+without changing the meaning or output of the program. The goal is to make the
+code more efficient by eliminating unnecessary computations.
+
+In this implementation, a simple optimization technique is used:
+- Removal of redundant temporary variables
+- Simplification of assignments
+
+Example:
+
+Before Optimization:
+t1 = c * d
+t2 = b + t1
+a = t2
+
+After Optimization:
+t1 = c * d
+a = b + t1
+
+The temporary variable t2 is removed because it is not required.
+
+Language Used:
+Python
+
+Files in This Folder:
+- optimizer.py – Python program for code optimization
+- optimizer_input.txt – Intermediate code before optimization
+- optimizer_output.txt – Optimized intermediate code
+- README.md – Documentation for Phase 5
+
+How to Run:
+1. Open a terminal in this folder.
+2. Run the following command:
+   python3 optimizer.py
+3. The optimized code will be generated in optimizer_output.txt
