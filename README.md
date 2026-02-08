@@ -1,3 +1,5 @@
+COMPILER DESIGN-ANTLR 
+
 This project implements the six phases of a compiler using Python as part of the Compiler Design course.
 
 The phases include lexical analysis, syntax analysis, semantic analysis, intermediate code generation, code optimization, and code generation.
